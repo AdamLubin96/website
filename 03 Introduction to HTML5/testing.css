@@ -1,0 +1,36 @@
+header {
+  background: blue;
+  color: white;
+  
+  
+}
+
+
+body {
+  background:#999;
+  font-family: arial;
+}
+ h2, h3 {
+  color: red;
+}
+
+
+
+
+p3{
+  background: green;
+  color: white;
+  padding 15px;
+}
+
+nav ul li{
+  background: red;
+  color: white;
+  list-style-type: none;
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+nav ul li a{
+  color: white;
+}
