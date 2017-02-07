@@ -22,18 +22,13 @@
 				
 			</div>
 			<div>
-				Assignment:
-				<!--
-				Make an input named "assignment"
-				-->
+				Assignment: <input type="name" name="Assignment" />
+				
 				
 			</div>
 
 			<div>
-				Code:
-				<!--
-				Make an input named "code" which is a text area to put student's code into.
-				-->
+				Code: <input type="text" name="code" />
 				
 			</div>
 			<div>
@@ -41,10 +36,16 @@
 			      
 			</div>
 			<div>
-				Pay:
-			<!--
-				Make an input named "payment" which is a radio box with possible values of visa, paypal, mastercard
-			-->
+				Pay: 
+				<form action="payement">
+					<fieldset>
+						<legend>Credi Card</legend>
+						<label><input type="radio" name="radio" value="visa"> Visa</label><br>
+						<label><input type="radio" name="radio" value="mastercard"</label>
+						
+					</fieldset>
+				
+				</form>
 			</div>
 			<div>
 				Score:

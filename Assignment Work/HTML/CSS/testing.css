@@ -1,18 +1,19 @@
 header {
-  background: blue;
+  background: #999;
   color: white;
   
   
 }
 
-
 body {
+  margin: 0;
+  padding: none;
   background:#999;
   font-family: arial;
 }
  h2, h3 {
   font-size 15px;
-  color: red;
+  color: #2196F3;
 }
 
 
@@ -20,7 +21,7 @@ body {
 
 p3{
   color: white;
-  padding 15px;
+  padding 20px;
 }
 
 p333{
@@ -28,14 +29,37 @@ p333{
 }
 
 
-nav ul li{
-  background: red;
+nav ul li  {
+  background: #2196F3;
   color: white;
   list-style-type: none;
   display: inline-block;
-  padding: 5px 15px;
+  padding: 10px 30px;
+  text-align: right;
+  margin: none;
+  
 }
 
 nav ul li a{
   color: white;
+}
+
+nav li a:hover {
+  color: #c1c1c1;
+}
+
+.banner{
+  width 100%;
+  display: block;
+}
+
+.banner > .banner-image{
+  
+  width: 100%;
+  display: block;
+}
+
+.navright{
+ float: right;
+  margin-left: 20px;
 }
