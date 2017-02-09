@@ -1,19 +1,29 @@
 header {
-  background: #999;
-  color: white;
+  background: black;
+  color: black;
   
   
+}
+
+section {
+
+  background: dodgerblue;
+  color: dodgerblue;
+  
+
 }
 
 body {
   margin: 0;
   padding: none;
-  background:#999;
+  background:white;
   font-family: arial;
 }
+ 
  h2, h3 {
-  font-size 15px;
-  color: #2196F3;
+  font-size: 15px;
+  color: black;
+  
 }
 
 
@@ -33,9 +43,9 @@ nav ul li  {
   background: #2196F3;
   color: white;
   list-style-type: none;
+  text-align: center;
   display: inline-block;
   padding: 10px 30px;
-  text-align: right;
   margin: none;
   
 }
@@ -62,4 +72,8 @@ nav li a:hover {
 .navright{
  float: right;
   margin-left: 20px;
+}
+
+figcaption {
+  color: black;
 }
