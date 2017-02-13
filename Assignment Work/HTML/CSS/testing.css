@@ -8,7 +8,9 @@ header {
 section {
 
   background: dodgerblue;
-  color: dodgerblue;
+  color: black;
+  margin: none;
+  padding: 10px 0px;
   
 
 }
@@ -29,13 +31,17 @@ body {
 
 
 
-p3{
-  color: white;
+p, p2, p3{
+  color: black;
   padding 20px;
 }
 
 p333{
-  color: green;
+  color: white;
+}
+
+ul, ui{
+  color: black;
 }
 
 
@@ -77,3 +83,21 @@ nav li a:hover {
 figcaption {
   color: black;
 }
+
+table ,th, td {
+border: 1px solid black;
+border-collapse: collapse;
+opacity: 0.95;
+}
+
+th, td{
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+th{
+  background-color: red;
+  color: white;
+}
+

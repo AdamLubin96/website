@@ -10,13 +10,25 @@ function process() {
     var okay = true;
 
     // Get form references:
+    var name = document.getElementById('name')
     var email = document.getElementById('email');
     var comments = document.getElementById('comments');
+    
+    
+    //validate the full name:
+
+    if(!name || !name.value || name.value.length < 3 || name.value.length > 100) {
+        okay = false;
+        alert('Please enter a valid name')
+        }
+  
+    
     // Validate the email address:
     if (!email || !email.value || (email.value.length < 6) || (email.value.indexOf('@') == -1)) {
         okay = false;
         alert('Please enter a valid email address!');
     }
+    
 
     // Validate the comments:
     var maxLength = 100;
