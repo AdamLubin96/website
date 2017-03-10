@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Adam-Lubin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="CSS/index-css.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+  <style>
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+      margin:0;
+      background-color: blue;
+      max-height: 100%;
+      max-width: 100%;
+
+
+    }
+
+    .mySlides {display:none;}
+    </style>
+
+<div class="jumbotron">
+  <a href="Personal-Webpage.html">
+      <img class="banner-image" src="Image/website-banner.png" alt="Website banner" width=100%>
+       </a>
+      </div>
+      
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a href="index.html"> 
+      <img src="Image/logo-for-web.png" width="40%" height="40%" align="center" >
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="videos.html">Top Videos</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"> <img src="Image/facebook.png" width="30px" height="30px"> </a>
+        <li><a href="#"> <img src="Image/instagram.png" width="30px" height="30px"> </a>
+        <li><a href="#"> <img src="Image/twitter.png" width="30px" height="30px "> </a>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+ 
+<div class="Adams-slider" style="max-width:100%" style="max-height:100%" align="center">
+  <h1> Welcome to my Website </h1>
+  <img class="mySlides" src="Image/Image 5.jpg" style="width:100%">
+  <img class="mySlides" src="Image/Image 6.jpg" style="width:100%">
+  <img class="mySlides" src="Image/Image 7.jpg" style="width:100%">
+</div>
+</body>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+<footer class="container-fluid text-center">
+  <p>© Copyright Adam Lubin</p>  
+  
+</footer>
+
+</body>
+</html>
